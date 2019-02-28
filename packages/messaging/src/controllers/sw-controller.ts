@@ -43,15 +43,15 @@ export class SwController extends BaseController {
   constructor(app: FirebaseApp) {
     super(app);
 
-    self.addEventListener('push', e => {
-      this.onPush(e);
-    });
+    // self.addEventListener('push', e => {
+    //   this.onPush(e);
+    // });
     self.addEventListener('pushsubscriptionchange', e => {
       this.onSubChange(e);
     });
-    self.addEventListener('notificationclick', e => {
-      this.onNotificationClick(e);
-    });
+    // self.addEventListener('notificationclick', e => {
+    //   this.onNotificationClick(e);
+    // });
   }
 
   // Visible for testing
